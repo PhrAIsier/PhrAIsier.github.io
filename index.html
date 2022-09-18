@@ -53,6 +53,41 @@
 		</form>
 	</div>
 
+	<div class="intro-modal">
+		<h1>Welcome to Phr<span>AI</span>sier</h1>
+		<div class="modal-body">
+			<h2>How to Play</h2>
+			<ol>
+				<li>Each day, a phrase will create an AI generated image</li>
+				<li>You’ll be shown the image, how many words are in the phrase, and have 5 guesses to figure it out.
+					Correct guesses don’t count against you (words like a, and, the, in are pre-filled)</li>
+				<li>After each guess, color coded words will indicate how close your guess was</li>
+				<ol type="a">
+					<li><span class="correct">Green</span>: The word is correct and in the right place</li>
+					<li><span class="close">Yellow</span>: The word is close (think “stormy” vs. “storm” or “Foggy” vs.
+						“Fog”)</li>
+					<li><span class="wrong">Strikethrough</span>: The word is not in the phrase</li>
+				</ol>
+			</ol>
+
+			<div class="example-section">
+				<h3>Example</h3>
+				<span class="answer">“Ghosts camping at night with the stars”</span>
+				<div class="puzzle-container">
+					<div class="pb blank">Ghosts</div>
+					<div class="pb blank">camping</div>
+					<div class="pb given">at</div>
+					<div class="pb blank">night</div>
+					<div class="pb given">with</div>
+					<div class="pb given">the</div>
+					<div class="pb blank">stars</div>
+				</div>
+			</div>
+		</div>
+
+		<button class="close" type="button">Close</button>
+	</div>
+
 	<!-- Scripts -->
 	<script type="text/javascript" src="assets/js/common.min.js"></script>
 </body>
