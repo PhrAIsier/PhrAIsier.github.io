@@ -25,22 +25,11 @@
 	</nav>
 
 	<div class="img-container">
-		<img src="assets/images/puzzle.png" />
+		<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" />
 	</div>
 
 	<div class="puzzle-section">
-		<div class="puzzle-container">
-			<div class="pb given">A</div>
-			<div class="pb blank"></div>
-			<div class="pb blank"></div>
-			<div class="pb given">by</div>
-			<div class="pb given">the</div>
-			<div class="pb blank"></div>
-			<div class="pb given">in</div>
-			<div class="pb given">a</div>
-			<div class="pb blank"></div>
-			<div class="pb blank"></div>
-		</div>
+		<div class="puzzle-container"></div>
 
 		<div class="guess-container">
 			<span class="pretext">Your Guesses (<span class="guess-count">0</span>/5):</span>
@@ -75,12 +64,12 @@
 				<span class="answer">“Ghosts camping at night with the stars”</span>
 				<div class="puzzle-container">
 					<div class="pb blank">Ghosts</div>
-					<div class="pb blank">camping</div>
+					<div class="pb close">camp</div>
 					<div class="pb given">at</div>
 					<div class="pb blank">night</div>
 					<div class="pb given">with</div>
 					<div class="pb given">the</div>
-					<div class="pb blank">stars</div>
+					<div class="pb correct">stars</div>
 				</div>
 			</div>
 		</div>
@@ -89,6 +78,13 @@
 	</div>
 
 	<!-- Scripts -->
+	<!-- Firebase start -->
+	<!-- The core Firebase JS SDK is always required and must be listed first -->
+	<script src="https://www.gstatic.com/firebasejs/7.20.0/firebase-app.js"></script>
+
+	<!-- Add Firebase products that you want to use -->
+	<script src="https://www.gstatic.com/firebasejs/7.20.0/firebase-analytics.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/7.20.0/firebase-database.js"></script>
 	<script type="text/javascript" src="assets/js/common.min.js"></script>
 </body>
 
