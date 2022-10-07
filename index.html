@@ -20,7 +20,6 @@
 
 <body class="">
 	<nav class="">
-		<img src="assets/images/hamburger.svg" />
 		<a href="/" class="home-link">Phr<span>AI</span>sier</a>
 	</nav>
 
@@ -41,44 +40,6 @@
 				inputmode="none" />
 			<button type="submit"></button>
 		</form>
-	</div>
-
-	<div class="intro-modal">
-		<h1>Welcome to Phr<span>AI</span>sier</h1>
-		<div class="modal-body">
-			<h2>How to Play</h2>
-			<ol>
-				<li>Each day, a <span class="bold">phrase</span> will create an AI generated image</li>
-				<li>You’ll be shown the image, how many words are in the phrase, and have <span class="bold caps">5
-						guesses</span> to figure it out what the phrase is</li>
-				<li>Correct guesses don’t count against you and words like: "a", "and", "the", and "in" are pre-filled
-				</li>
-				<li>After each guess, color coded words will indicate how close your guess was</li>
-				<ol type="a">
-					<li><span class="correct">Green</span>: The word is in the phrase</li>
-					<li><span class="close">Yellow</span>: The word is close (think “stormy” vs. “storm” or “fire” vs.
-						“bonfire”)</li>
-					<li><span class="wrong">Strikethrough</span>: The word is not in the phrase, and you lose one guess
-					</li>
-				</ol>
-			</ol>
-			<hr />
-			<div class="example-section">
-				<h3>Example</h3>
-				<span class="answer">“Ghosts camping at night with the stars”</span>
-				<div class="puzzle-container">
-					<div class="pb blank">Ghosts</div>
-					<div class="pb close">camp</div>
-					<div class="pb given">at</div>
-					<div class="pb blank">night</div>
-					<div class="pb given">with</div>
-					<div class="pb given">the</div>
-					<div class="pb correct">stars</div>
-				</div>
-			</div>
-		</div>
-
-		<button class="close" type="button">Close</button>
 	</div>
 
 	<div class="keyboard">
@@ -116,6 +77,83 @@
 			<button class="keyboard-button">m</button>
 			<button class="keyboard-button" data-value="Enter">→</button>
 		</div>
+	</div>
+
+	<div class="intro-modal" style="display: none;">
+		<h1>Welcome to Phr<span>AI</span>sier</h1>
+		<div class="modal-body">
+			<h2>How to Play</h2>
+			<ol>
+				<li>Each day, a <span class="bold">phrase</span> will create an AI generated image</li>
+				<li>You’ll be shown the image, how many words are in the phrase, and have <span class="bold caps">5
+						guesses</span> to figure it out what the phrase is</li>
+				<li>Correct guesses don’t count against you and words like: "a", "and", "the", and "in" are pre-filled
+				</li>
+				<li>After each guess, color coded words will indicate how close your guess was</li>
+				<ol type="a">
+					<li><span class="correct">Green</span>: The word is in the phrase</li>
+					<li><span class="close">Yellow</span>: The word is close (think “stormy” vs. “storm” or “fire” vs.
+						“bonfire”)</li>
+					<li><span class="wrong">Strikethrough</span>: The word is not in the phrase, and you lose one guess
+					</li>
+				</ol>
+			</ol>
+			<hr />
+			<div class="example-section">
+				<h3>Example</h3>
+				<span class="answer">“Ghosts camping at night with the stars”</span>
+				<div class="puzzle-container">
+					<div class="pb blank">Ghosts</div>
+					<div class="pb close">camp</div>
+					<div class="pb given">at</div>
+					<div class="pb blank">night</div>
+					<div class="pb given">with</div>
+					<div class="pb given">the</div>
+					<div class="pb correct">stars</div>
+				</div>
+			</div>
+		</div>
+
+		<button class="close" type="button">Close</button>
+	</div>
+
+	<div class="end-modal" style="display: none;">
+		<div class="modal-body">
+			<h1></h1>
+			<div class="correct-phrase-block">
+				<h2>Correct Phrase</h2>
+				<div class="correct-phrase"></div>
+			</div>
+			<div class="results-block">
+				<h2>Results</h2>
+				<div class="end-modal-results">
+					<div class="result-col">
+						<div class="result-label">Puzzle</div>
+						<div class="result-value pid"></div>
+					</div>
+					<div class="result-col">
+						<div class="result-label">Guesses</div>
+						<div class="result-value score"></div>
+					</div>
+					<div class="result-col">
+						<div class="result-label">Overall Avg.</div>
+						<div class="result-value avg-score">3/5</div>
+					</div>
+					<div class="result-col">
+						<div class="result-label">Streak</div>
+						<div class="result-value streak">1</div>
+					</div>
+				</div>
+			</div>
+			<div class="histogram-section">
+				<h2>Guess Distribution</h2>
+				<div class="histo-scores"></div>
+			</div>
+			<button class="share-button" type="button">Share</button>
+			<h2 class="next-puzzle">Next Puzzel In: <span class="next-puzzle-timer"></span></h2>
+		</div>
+
+		<button class="close" type="button">Close</button>
 	</div>
 
 	<!-- Scripts -->
